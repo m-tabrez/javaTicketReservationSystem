@@ -1,10 +1,14 @@
 package com.BeginnersProject.Collections;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class TrainService {
+
+	ArrayList<String> routes = new ArrayList<>();
+
 	static List<Train> trainsList = List.of(
 			new Train("Train-One", 101, "Hyederabad", "Bangalore", LocalDate.now(), 100, 800),
 			new Train("Train-Two", 102, "Bangalore", "Hyederabad", LocalDate.now(), 100, 800),
